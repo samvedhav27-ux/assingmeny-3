@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <!-- 5 type 
+     static / ny default 
+     relative 
+     absolute
+     sticky
+     fixed-->
+
+
+     <style>
+        .cont{
+            height: 1200px
+            border: 1px solid
+            padding: 20 px;
+        }
+
+        #static {
+            border: 1px solid
+            padding: 20px;
+            top: 30px;
+            left:50px;
+            position: static;
+        }
+
+        #relative{
+            position: relative
+            background-color: teal
+            padding: 20px;
+            top: 5px;
+            left: 10px;
+        }
+        #absolute{
+            position: absolute;
+            
+        }
+
+     </style>
+</head>
+<body>
+    <div class="cont">
+        <div id="static">Static Position</div>
+        <div id="relative"></div>
+        <div id="absolute">Absolute position</div>
+        <div id="fixed">Fixed position</div>
+    </div>
+    <div class="cont">
+        <div id="sticky">Sticky position</div>
+    </div>
+    <div class="cont"></div>
+</body>
+</html>
